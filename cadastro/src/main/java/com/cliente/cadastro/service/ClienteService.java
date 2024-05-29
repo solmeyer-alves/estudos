@@ -2,7 +2,6 @@ package com.cliente.cadastro.service;
 
 import com.cliente.cadastro.entity.Cliente;
 import com.cliente.cadastro.repository.ClienteRepository;
-import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,7 +13,6 @@ import java.util.List;
 import java.util.Optional;
 
 @Data
-@Entity
 @Builder
 @Service
 @AllArgsConstructor
@@ -32,7 +30,7 @@ public class ClienteService {
         return clienteRepository.findAll();
     }
 
-    public Optional<Cliente> consultarPorId(Long id) {
-        return clienteRepository.findById(id);
-    }
+//    public Optional<Cliente> consultarPorId(Long id) {
+//        return clienteRepository.findById(id);
+//    }
 }
