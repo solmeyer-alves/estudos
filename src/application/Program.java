@@ -23,10 +23,7 @@ public class Program {
 		 /* Pode-se utilizar uma variável para informar o valor */
 		 double min = 100.0;
 		
-		 /* Expressao lambda declarada */
-		Predicate<Product> prod = p -> p.getPrice() >= min; 
-		
-		list.removeIf(prod);
+		list.removeIf(p -> p.getPrice() >= min);
 		
 		for(Product p : list) {
 			System.out.println(p);
