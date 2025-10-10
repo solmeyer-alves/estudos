@@ -3,9 +3,9 @@ package application;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.function.Predicate;
 
 import entities.Product;
+import util.PriceUpdate;
 
 public class Program {
 
@@ -20,14 +20,13 @@ public class Program {
 		 list.add(new Product("Tablet", 350.50));
 		 list.add(new Product("HD Case", 80.90));
 		
-		 /* Pode-se utilizar uma variável para informar o valor */
-		 double min = 100.0;
+		/* Usando uma instancia da classe PriceUpdate no forEach */
+		 
+		list.forEach(new PriceUpdate() );
 		
-		list.removeIf(p -> p.getPrice() >= min);
+		/* Outra maneira de percorrrer a lista e imprimir o resultado com forEach */
 		
-		for(Product p : list) {
-			System.out.println(p);
-		}
+		list.forEach(System.out :: println);
 		 
 		 
 	}
