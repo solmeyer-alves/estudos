@@ -6,7 +6,7 @@ Este projeto tem como objetivo explorar os fundamentos da **programação funcio
 
 ## 🧠 Interfaces Funcionais em Ação
 
-### 🔹 `Predicate<T>` — Filtragem com lógica booleana
+🔹 `Predicate<T>` — Filtragem com lógica booleana
 
 A interface `Predicate` representa uma função que recebe um argumento e retorna um valor booleano. É amplamente usada para **filtrar elementos** em coleções.
 
